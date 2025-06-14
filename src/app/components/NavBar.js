@@ -1,3 +1,4 @@
+"use client";
 import { Menu, Target, X, ChevronDown } from "lucide-react";
 import React, { useState, useEffect, useRef } from "react";
 
@@ -12,24 +13,24 @@ function NavBar() {
       submenu: [
         {
           name: "Departmentroles",
-          href: "/Careerplanning?page=Departmentroles",
+          href: "/planning?page=Departmentroles",
         },
-        { name: "Role Selection", href: "/Careerplanning?page=Roleselection" },
-        { name: "Role Roadmap", href: "/Careerplanning?page=Roleroadmap" },
-        { name: "Course Roadmap", href: "/Careerplanning?page=Courseroadmap" },
+        { name: "Role Selection", href: "/planning?page=RoleRoadMap" },
+        { name: "Role Roadmap", href: "/planning?page=Roleroadmap" },
+        { name: "Course Roadmap", href: "/planning?page=Courseroadmap" },
       ],
     },
     {
-      name: "Learning",
+      name: "learn",
       submenu: [
-        { name: "Courses", href: "/Learning?page=Courses" },
-        { name: "Projects", href: "/Learning?page=Projects" },
-        { name: "Recall", href: "/Learning?page=Recall" },
+        { name: "Courses", href: "/learn?page=Courses" },
+        { name: "Projects", href: "/learn?page=Projects" },
+        { name: "Recall", href: "/learn?page=Recall" },
         {
           name: "JD wise preparation",
-          href: "/Learning?page=JDwise preparation",
+          href: "/learn?page=JDwise preparation",
         },
-        { name: "30 day Prepare", href: "/Learning?page=30day Prepare" },
+        { name: "30 day Prepare", href: "/learn?page=30day Prepare" },
       ],
     },
     {
@@ -52,11 +53,11 @@ function NavBar() {
       submenu: [
         {
           name: "Prepare for jobskill",
-          href: "/Forcompany?page=Prepareforjobskill",
+          href: "/company?page=Prepareforjobskill",
         },
-        { name: "Host problem", href: "/Forcompany?page=Hostproblem" },
-        { name: "Hire Talent", href: "/Forcompany?page=Hiretalent" },
-        { name: "Add Assisment", href: "/Forcompany?page=Addassisment" },
+        { name: "Host problem", href: "/company?page=Hostproblem" },
+        { name: "Hire Talent", href: "/company?page=Hiretalent" },
+        { name: "Add Assisment", href: "/company?page=Addassisment" },
       ],
     },
   ];
@@ -106,7 +107,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="relative z-50 bg-black/10 backdrop-blur-md border-b border-white/10">
+    <nav className="relative z-50 bg-black/10 backdrop-blur-md border-b border-white/10 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}

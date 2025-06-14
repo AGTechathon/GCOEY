@@ -12,14 +12,12 @@ import {
   Target,
   TrendingUp,
   Zap,
-  Menu,
-  X,
   Globe,
   Brain,
   ShieldCheck,
 } from "lucide-react";
-import NavBar from "./components/NavBar";
 import Image from "next/image";
+import Footer from "./components/Footer";
 
 export default function JobPrepHomepage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -115,7 +113,6 @@ export default function JobPrepHomepage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
-      <NavBar />
 
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -577,65 +574,8 @@ export default function JobPrepHomepage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-3xl p-12 border border-white/10">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to{" "}
-              <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Get Started?
-              </span>
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join thousands of successful job seekers who've accelerated their
-              careers with our proven preparation methods.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105">
-                Start Free Trial
-              </button>
-              <button className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-all">
-                View Pricing
-              </button>
-            </div>
-
-            <p className="text-gray-400 mt-4">
-              No credit card required • 14-day free trial
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
-                <Target className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-2xl font-bold text-white">PrepAce</span>
-            </div>
-
-            <div className="text-gray-400 text-center md:text-right">
-              <p>&copy; 2025 PrepAce. All rights reserved.</p>
-              <div className="flex space-x-6 mt-2 justify-center md:justify-end">
-                <a href="#" className="hover:text-white transition-colors">
-                  Privacy
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
-                  Terms
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
-                  Support
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
