@@ -1,17 +1,28 @@
 "use client";
+import ChatBot from "@/app/components/ChatBot";
 import dynamic from "next/dynamic";
 import { useSearchParams } from "next/navigation";
 
 const componentMap = {
   DepartmentJobRoles: dynamic(() =>
-    import("@/app/planning/components/DepartmentJobs")
+    import("@/app/careerplanning/components/DepartmentJobs")
   ),
-  RoleRoadMap: dynamic(() => import("@/app/planning/components/RoleRoadMap")),
+  RoleRoadMap: dynamic(() =>
+    import("@/app/careerplanning/components/RoleRoadMap")
+  ),
 
-  MoreInfoRole: dynamic(() => import("@/app/planning/components/MoreInfoRole")),
+  MoreInfoRole: dynamic(() =>
+    import("@/app/careerplanning/components/MoreInfoRole")
+  ),
 
   CourseRoadmap: dynamic(() =>
-    import("@/app/planning/components/CourseRoadmap")
+    import("@/app/careerplanning/components/CourseRoadmap")
+  ),
+  CompetitiveExamsDashboard: dynamic(() =>
+    import("@/app/careerplanning/components/ExamForJobs")
+  ),
+  TopCompany: dynamic(() =>
+    import("@/app/careerplanning/components/TopCompany")
   ),
 };
 
@@ -20,10 +31,11 @@ const carreplanning = () => {
   const page_name = searchParams.get("page");
   const Component =
     componentMap[page_name] ||
-    dynamic(() => import("@/app/planning/components/CourseRoadmap"));
+    dynamic(() => import("@/app/components/Instruction"));
   return (
     <>
       <Component />
+      <ChatBot />
     </>
   );
 };
