@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import {
-  ChevronRight,
   Play,
   CheckCircle,
   Users,
@@ -12,8 +11,6 @@ import {
   Target,
   TrendingUp,
   Zap,
-  Menu,
-  X,
 } from "lucide-react";
 import NavBar from "./components/NavBar";
 
