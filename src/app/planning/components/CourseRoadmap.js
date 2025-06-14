@@ -10,8 +10,6 @@ import {
   Bell,
 } from "lucide-react";
 import { AiPreCourse } from "../../../../config/AllAiModels";
-import { collection, getDocs, query, where, addDoc } from "firebase/firestore";
-import { db } from "@/lib/firebaseConfig";
 
 function CourseRoadmap() {
   const [expandedModule, setExpandedModule] = useState(0);
@@ -24,37 +22,6 @@ function CourseRoadmap() {
   const toggleModule = (index) => {
     setExpandedModule(expandedModule === index ? -1 : index);
   };
-
-  // const handleGenerateRoadmap = async (e) => {
-  //   e.preventDefault();
-  //   if (!inputValue.trim()) return;
-
-  //   setLoading(true);
-  //   setProgress(0);
-
-  //   const progressInterval = setInterval(() => {
-  //     setProgress((prev) => {
-  //       const newProgress = prev + Math.random() * 15;
-  //       return newProgress >= 95 ? 95 : newProgress;
-  //     });
-  //   }, 600);
-
-  //   const prompt = `Create a detailed roadmap for learning ${inputValue}. Structure it like a hierarchical mind map with 10–12 main modules (as core topics). Under each module, list 3–6 detailed subtopics or skills. Use a clear format suitable for creating a flowchart or visual roadmap. Focus on covering beginner to advanced concepts in json format.`;
-
-  //   try {
-  //     const result = await AiPreCourse.sendMessage(prompt);
-  //     const responseText = await result.response.text();
-  //     const parsedResult = JSON.parse(responseText);
-  //     setRoadmap(parsedResult);
-  //     setProgress(100);
-  //   } catch (error) {
-  //     console.error("Error generating roadmap:", error);
-  //   } finally {
-  //     clearInterval(progressInterval);
-  //     setLoading(false);
-  //     setTimeout(() => setProgress(0), 1000);
-  //   }
-  // };
 
   const handleGenerateRoadmap = async (e) => {
     e.preventDefault();
@@ -76,35 +43,17 @@ function CourseRoadmap() {
       const result = await AiPreCourse.sendMessage(prompt);
       const responseText = await result.response.text();
       const parsedResult = JSON.parse(responseText);
-
-      // Check if roadmap already exists
-      const q = query(
-        collection(db, "courseroadmap"),
-        where("title", "==", parsedResult.title)
-      );
-      const querySnapshot = await getDocs(q);
-
-      if (querySnapshot.empty) {
-        // If not found, store it
-        await addDoc(collection(db, "courseroadmap"), {
-          ...parsedResult,
-          timestamp: new Date(),
-        });
-        console.log("Roadmap stored in Firestore");
-      } else {
-        console.log("Roadmap already exists in Firestore");
-      }
-
       setRoadmap(parsedResult);
       setProgress(100);
     } catch (error) {
-      console.error("Error generating or storing roadmap:", error);
+      console.error("Error generating roadmap:", error);
     } finally {
       clearInterval(progressInterval);
       setLoading(false);
       setTimeout(() => setProgress(0), 1000);
     }
   };
+
   const recentCourses = [
     "Python Programming",
     "JavaScript Fundamentals",

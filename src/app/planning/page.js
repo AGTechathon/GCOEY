@@ -24,7 +24,6 @@ const carreplanning = () => {
   return (
     <>
       <Component />
-      {/* <ChatBot /> */}
     </>
   );
 };
