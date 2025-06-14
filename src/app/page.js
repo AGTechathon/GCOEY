@@ -205,9 +205,9 @@ export default function JobPrepHomepage() {
       </section>
 
       {/* Phases Section */}
-      <section className="flex justify-center">
+      {/* <section className="flex justify-center">
         <Image src={"/phases.png"} height={800} width={1000} alt="phases" />
-      </section>
+      </section> */}
 
       {/* Features Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
