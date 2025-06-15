@@ -26,7 +26,6 @@ function NavBar() {
       submenu: [
         { name: "Courses", href: "/learn/course" },
         { name: "Projects", href: "/learn?page=Projects" },
-        { name: "Recall", href: "/learn?page=Recall" },
         { name: "Recall", href: "/learn/recall" },
         { name: "30 days Preparation", href: "/learn?page=DayRemains" },
         { name: "Tool Company Use", href: "/learn?page=ToolsCompanyUse" },

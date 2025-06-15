@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -14,8 +14,18 @@ import {
 import { Button } from "@/components/ui/button";
 
 const StudentRoadMap = ({ setTree }) => {
-  const roadmap = JSON.parse(localStorage.getItem("roadmap"));
-  const role = localStorage.getItem("role");
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    const roadmap = localStorage.getItem("roadmap");
+    if (roadmap) {
+      try {
+        setData(JSON.parse(roadmap));
+      } catch (error) {
+        console.error("Invalid roadmap data in localStorage");
+      }
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 p-4 md:p-8 mt-10">
@@ -23,10 +33,10 @@ const StudentRoadMap = ({ setTree }) => {
         {/* Header Section with improved visual hierarchy */}
         <div className="text-center space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 tracking-tight">
-            {roadmap.title}
+            {data?.roadmap?.title}
           </h1>
           <p className="text-lg text-blue-700 max-w-2xl mx-auto">
-            {roadmap.introduction}
+            {data?.roadmap?.introduction}
           </p>
         </div>
 
@@ -40,7 +50,7 @@ const StudentRoadMap = ({ setTree }) => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-blue-700 text-lg">{roadmap.goal}</p>
+              <p className="text-blue-700 text-lg">{data?.roadmap?.goal}</p>
             </CardContent>
           </Card>
 
@@ -53,7 +63,7 @@ const StudentRoadMap = ({ setTree }) => {
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
-                {roadmap?.objectives?.map((objective, index) => (
+                {data?.roadmap?.objectives?.map((objective, index) => (
                   <li key={index} className="flex items-start gap-3">
                     <div className="h-6 w-6 flex-shrink-0 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-sm font-medium">
                       {index + 1}
@@ -72,7 +82,7 @@ const StudentRoadMap = ({ setTree }) => {
             Your Learning Journey
           </h2>
 
-          {roadmap?.stages?.map((stage, index) => (
+          {data?.roadmap?.stages?.map((stage, index) => (
             <Card
               key={index}
               className="bg-white/80  border-2 border-blue-100 shadow-lg transform hover:scale-[1.02] transition-transform duration-300"

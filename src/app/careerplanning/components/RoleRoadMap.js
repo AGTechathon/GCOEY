@@ -3,19 +3,9 @@ import { useEffect, useState } from "react";
 import LoadingDialog from "../../components/LoadingDialog";
 import StudentRoadMap from "./RoadMap";
 import {
-  collection,
-  query,
-  where,
-  getDocs,
-  addDoc,
-  serverTimestamp,
-} from "firebase/firestore";
-import {
   AiGenerateRollRoadmap,
   AiPreRole,
 } from "../../../../config/AllAiModels";
-
-import { db } from "@/lib/firebaseConfig";
 import Precourse from "./Precourse";
 
 export default function RoleRoadMap() {
@@ -24,44 +14,42 @@ export default function RoleRoadMap() {
   const [loading, setLoading] = useState(false);
   const [tree, setTree] = useState(false);
   const [roadmap, setRoadmap] = useState("");
-  const [branch, setBranch] = useState("");
-  const [level, setLevel] = useState("");
+  const [branch, setBranch] = useState(""); // Optional: remove if not needed
+  const [level, setLevel] = useState("beginner");
   const [pre, setPre] = useState("");
 
+  useEffect(() => {
+    const roadmap = localStorage.getItem("roadmap");
+    if (roadmap) {
+      setRoadmap(roadmap);
+      setTree(true);
+    }
+  }, []);
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
-    try {
-      // Check if roadmap already exists
-      const roadmapRef = collection(db, "careerlunch");
-      const q = query(
-        roadmapRef,
-        where("role", "==", inputValue),
-        where("branch", "==", branch),
-        where("level", "==", level)
-      );
-      const querySnapshot = await getDocs(q);
+    const localKey = `roadmap`;
+    const storedData = localStorage.getItem(localKey);
+    const BASIC_PROMPT = `generate Simple,Focused,Progressive, and Outcome-Oriented roadmap for ${inputValue} of branch ${branch},include introducation,goal,objective,stages,topic,subtopics,time required,real worldprojects,challenges,resources,skill required to master.in json formate.`;
 
-      if (!querySnapshot.empty) {
-        // If exists, use the first matched document
-        const existingDoc = querySnapshot.docs[0].data();
-        setSubmittedValue(existingDoc.roadmap);
-        setPre(existingDoc.precourse);
+    try {
+      if (storedData) {
+        const parsed = JSON.parse(storedData);
+        setSubmittedValue(parsed.roadmap);
+        setPre(parsed.precourse);
         setTree(true);
         setLoading(false);
         return;
       }
 
-      // If not exists, generate roadmap via AI
-      const BASIC_PROMPT = `generate Simple,Focused,Progressive, and Outcome-Oriented roadmap for ${inputValue} of branch ${branch},include introducation,goal,objective,stages,topic,subtopics,time required,real worldprojects,challenges,resources,skill required to master.in json formate.`;
+      // Generate roadmap via AI
       const roadmapResult = await AiGenerateRollRoadmap.sendMessage(
         BASIC_PROMPT
       );
       const roadmapText = await roadmapResult.response.text();
       const roadmapJSON = JSON.parse(roadmapText);
       setSubmittedValue(roadmapJSON);
-      // localStorage.setItem("roadmap", JSON.stringify(roadmapJSON));
 
       const prePrompt = `give me list of things i want know about befor start courses in "${inputValue}".include .in json formate.`;
       const preResult = await AiPreRole.sendMessage(prePrompt);
@@ -69,19 +57,21 @@ export default function RoleRoadMap() {
       const preJSON = JSON.parse(preText);
       setPre(preJSON);
 
-      // Save new data to Firebase
-      await addDoc(roadmapRef, {
-        role: inputValue,
-        branch: branch,
-        level: level,
-        roadmap: roadmapJSON,
-        precourse: preJSON,
-        createdAt: serverTimestamp(),
-      });
+      // Save to localStorage
+      localStorage.setItem(
+        localKey,
+        JSON.stringify({
+          role: inputValue,
+          branch,
+          level,
+          roadmap: roadmapJSON,
+          precourse: preJSON,
+        })
+      );
 
       setTree(true);
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error generating roadmap:", error);
     }
 
     setLoading(false);
@@ -111,6 +101,7 @@ export default function RoleRoadMap() {
               onChange={(e) => setInputValue(e.target.value)}
               className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
               placeholder="Enter your topic here..."
+              required
             />
           </div>
           <select
@@ -139,7 +130,7 @@ export default function RoleRoadMap() {
 
       {tree && (
         <div className="mt-8 w-full max-w-4xl">
-          {pre && <Precourse pre={pre} inputValue={inputValue} />}
+          <Precourse pre={pre} inputValue={inputValue} roadmap={roadmap} />
           <StudentRoadMap roadmap={submittedValue} setTree={setTree} />
         </div>
       )}

@@ -291,7 +291,7 @@ const SyallbusOutline = () => {
                             className="font-bold"
                             variant="outline"
                             onClick={() => {
-                              window.location.href = `/recall/start?value=0&chapter=${
+                              window.location.href = `/learn/recall/start?value=0&chapter=${
                                 index + 1
                               }`;
                             }}
@@ -349,7 +349,8 @@ const SyallbusOutline = () => {
               shadow-xl hover:shadow-2xl"
               onClick={() => {
                 state.notes
-                  ? (window.location.href = "/recall/start?value=0&chapter=1")
+                  ? (window.location.href =
+                      "/learn/recall/start?value=0&chapter=1")
                   : generateNotes();
               }}
               disabled={
@@ -387,7 +388,8 @@ const SyallbusOutline = () => {
               shadow-xl hover:shadow-2xl"
               onClick={() => {
                 state.flashcard
-                  ? (window.location.href = "/recall/start?value=1&chapter=1")
+                  ? (window.location.href =
+                      "/learn/recall/start?value=1&chapter=1")
                   : generateFlashCards();
               }}
               disabled={
@@ -427,7 +429,8 @@ const SyallbusOutline = () => {
               shadow-xl hover:shadow-2xl"
               onClick={() => {
                 state.quiz
-                  ? (window.location.href = "/recall/start?value=2&chapter=1")
+                  ? (window.location.href =
+                      "/learn/recall/start?value=2&chapter=1")
                   : generateQuiz();
               }}
               disabled={
@@ -465,7 +468,7 @@ const SyallbusOutline = () => {
               shadow-xl hover:shadow-2xl"
               onClick={() => {
                 state.qa
-                  ? (window.location.href = "/recall/start?value=4")
+                  ? (window.location.href = "/learn/recall/start?value=4")
                   : generateQA();
               }}
               disabled={
@@ -501,7 +504,7 @@ const SyallbusOutline = () => {
               shadow-xl hover:shadow-2xl"
               onClick={() => {
                 state.teachToOther
-                  ? (window.location.href = "/recall/start?value=3")
+                  ? (window.location.href = "/learn/recall/start?value=3")
                   : teachToOther();
               }}
               disabled={

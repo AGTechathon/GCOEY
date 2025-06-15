@@ -256,7 +256,7 @@ const MoreInfoRole = () => {
         <div className="flex justify-between mt-8">
           <Button
             onClick={() =>
-              (window.location.href = "/page?page=DepartmentJobRoles")
+              (window.location.href = "/careerplanning?page=DepartmentJobRoles")
             }
             className="flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-700"
           >
