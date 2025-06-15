@@ -8,7 +8,7 @@
 
 ## 🚨 Problem Statement
 
-> A degree ≠ a job anymore.
+>"A degree ≠ a job, but with the right skills and direction, it can be."
 
 Each year, **20+ lakh B.Tech graduates** step into the job market — yet **only 20–30%** are industry-ready.  
 Outdated preparation methods, lack of personalized guidance, and limited exposure to real-time skill feedback have made job readiness a major challenge.
