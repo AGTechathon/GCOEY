@@ -19,28 +19,30 @@ Outdated preparation methods, lack of personalized guidance, and limited exposur
 
 🎯 **Goal**: Help students discover their best career path and become job-ready with personalized, AI-driven support.
 
+---
+
 ### 🔁 Approach
 
-- **Analyze** – Career interest and skill assessment
-- **Recommend** – AI-suggested roles and roadmaps
-- **Prepare** – Skill-based modules, interview prep
-- **Optimize** – Real-time feedback with AI
-- **Engage** – Gamify learning with rewards & badges
+- **Analyze** – Career interest and skill assessment  
+- **Recommend** – AI-suggested roles and roadmaps  
+- **Prepare** – Skill-based modules, interview prep  
+- **Optimize** – Real-time feedback with AI  
+- **Engage** – Gamify learning with rewards & badges  
 
 ---
 
 ## ✨ Key Features
 
-- ✅ Ikigai-Based Role Selection
-- ✅ Real-Time Resume & Feedback Analysis
-- ✅ Mock Interviews & Coding Rounds
-- ✅ Gamification with Badges & Rewards
-- ✅ Department-wise Job Roadmaps
-- ✅ AI-powered Resume Optimization
-- ✅ Soft Skills Tracker & Learning Modules
-- ✅ Multi-language Support
-- ✅ Career Planning, Development, & Interview Simulation
-- ✅ Industry-Specific Learning Paths
+- ✅ Ikigai-Based Role Selection  
+- ✅ Real-Time Resume & Feedback Analysis  
+- ✅ Mock Interviews & Coding Rounds  
+- ✅ Gamification with Badges & Rewards  
+- ✅ Department-wise Job Roadmaps  
+- ✅ AI-powered Resume Optimization  
+- ✅ Soft Skills Tracker & Learning Modules  
+- ✅ Multi-language Support  
+- ✅ Career Planning, Development, & Interview Simulation  
+- ✅ Industry-Specific Learning Paths  
 
 ---
 
@@ -91,67 +93,68 @@ Assessment for Job Fit
 
 ## 🧩 Execution Plan
 
-![Execution Plan](./2.png)
+![Execution Plan](./public/projectshot/Copy%20of%20Team_GCOEY.png)
 
 ### 🔹 Phase 1: Career Planning
-- Dept-wise Roles
-- Check My Role
-- Roadmaps
-- Course Roadmap
+- Dept-wise Roles  
+- Check My Role  
+- Roadmaps  
+- Course Roadmap  
+
 ### 🔹 Phase 2: Learning & Development
-- Explore Courses
-- Creat Courses
-- Projects
-- Recall
-- 30-Day Targeted Prep
-- Tool Company use
-- Cheack My Resume
+- Explore Courses  
+- Create Courses  
+- Projects  
+- Recall  
+- 30-Day Targeted Prep  
+- Tools Companies Use  
+- Check My Resume  
 
 ### 🔹 Phase 3: Interview Preparation
-- Soft Skill Interiew
-- Aptitude Exam
-- Mock Interviews
-- Coding Practice
+- Soft Skills Interview  
+- Aptitude Exam  
+- Mock Interviews  
+- Coding Practice  
 
 ### 🔹 Phase 4: Ecosystem Integration
-- Company Dashboard
-- Assessments
-- Post Jobs & Hire
-- Company Prolem
+- Company Dashboard  
+- Assessments  
+- Post Jobs & Hire  
+- Company Problem Challenges  
 
 ---
 
 ## 🧠 System Architecture & Workflow
 
-![System Architecture](./4.png)
+![System Architecture](./public/projectshot/4.png)
 
 ---
 
 ## 🔬 Innovations
 
-![Innovation Highlights](./Copy%20of%20Team_GCOEY.png)
+![Innovation Highlights](./public/projectshot/2.png)
 
 ---
 
 ## ⚙️ Tech Stack
 
 | Layer       | Technology               |
-|------------|---------------------------|
-| Frontend   | Next.js, Tailwind CSS     |
-| Backend    | Next.js (API routes)      |
-| UI Library | Shadcn                    |
-| AI Engine  | Gemini Flash 1.5 API      |
+|-------------|---------------------------|
+| Frontend    | Next.js, Tailwind CSS     |
+| Backend     | Next.js (API routes)      |
+| UI Library  | Shadcn                    |
+| AI Engine   | Gemini Flash 1.5 API      |
 
 ---
 
 ## 🧠 Core Algorithms
 
-- AI Career Path Recommender
-- Resume Evaluation & Optimization
-- Skill Gap Analyzer
-- AI Mock Interview Engine
-- AI-Assisted Coding Platform
-- Language Barrier Remover
+- AI Career Path Recommender  
+- Resume Evaluation & Optimization  
+- Skill Gap Analyzer  
+- AI Mock Interview Engine  
+- AI-Assisted Coding Platform  
+- Language Barrier Remover  
 
 ---
 
@@ -176,17 +179,17 @@ Start the dev server:
 npm run dev
 ```
 
-Visit: http://localhost:3000
+Visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
 ## 🔭 Future Scope
 
-- 📱 Mobile App (Multi-language + Offline Support)
-- 🧠 Advanced ML-based Feedback Loop
-- 🏛 Government Scheme Integration
-- 🧑‍🏫 Human-AI Hybrid Validation
-- 🎯 Micro-certifications & Career Tests
+- 📱 Mobile App (Multi-language + Offline Support)  
+- 🧠 Advanced ML-based Feedback Loop  
+- 🏛 Government Scheme Integration  
+- 🧑‍🏫 Human-AI Hybrid Validation  
+- 🎯 Micro-certifications & Career Tests  
 
 ---
 
@@ -213,10 +216,22 @@ We aim to make every student — regardless of college or background — **caree
 
 ## 🎬 Demo & Resources
 
-- 📽️ *Demo Video* – [Coming Soon]
-- 📝 *Pitch Deck* – Inside `/assets`
-- 💡 *Prototype Screenshots* – See Presentation Folder
+- 📽️ **Demo Video** – [Coming Soon](./public/projectshot/gcoey.mp4)  
+- 📝 **Showcase Pitch Deck** – [View Presentation (PDF)](./public/projectshot/Team_GCOEY.pdf)  
+- 💡 **Prototype Screenshot**:
+
+###  Home Screen
+![Home](./public/projectshot/home_page.png)
+
+
 
 ---
 
-Made with ❤️ by **Team GCOEY**
+## 👨‍💻 Authors
+
+| Name             | Role                  | GitHub                                           | LinkedIn                                         |
+|------------------|-----------------------|--------------------------------------------------|--------------------------------------------------|
+| Nikhil Kandhare  | Full Stack Developer  | [GitHub](https://github.com/1900690105)      | [LinkedIn](https://www.linkedin.com/in/nikhilkandhare/) |
+| Ajinkya Nishane  | Full Stack Developer  | [GitHub](https://github.com/AjinyaNishane)         | [LinkedIn](https://www.linkedin.com/in/ajinkyanishane/)   |
+| Nikita Dhoble    | Frontend Developer    | [GitHub](https://github.com/NikitaDhoble)        | [LinkedIn](https://www.linkedin.com/in/nikita-dhoble-b77026334/)  |
+| Roshan Hiwase    | Frontend & Research   | [GitHub](https://github.com/Roshan-470)        | [LinkedIn](https://linkedin.com/in/roshanhiwase)  |
