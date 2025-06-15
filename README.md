@@ -216,13 +216,12 @@ We aim to make every student — regardless of college or background — **caree
 
 ## 🎬 Demo & Resources
 
-- 📽️ **Demo Video** – [Coming Soon](https://drive.google.com/drive/folders/15AQ5yElLXvzNqhrHQqQ0F4IOzVLA_yyW?usp=sharing)  
+- 📽️ **Demo Video** – [Watch Demo](https://drive.google.com/drive/folders/15AQ5yElLXvzNqhrHQqQ0F4IOzVLA_yyW?usp=sharing)  
 - 📝 **Showcase Pitch Deck** – [View Presentation (PDF)](./public/projectshot/Team_GCOEY.pdf)  
 - 💡 **Prototype Screenshot**:
 
 ###  Home Screen
 ![Home](./public/projectshot/home_page.png)
-
 
 
 ---
@@ -235,3 +234,28 @@ We aim to make every student — regardless of college or background — **caree
 | Ajinkya Nishane  | Full Stack Developer  | [GitHub](https://github.com/AjinyaNishane)         | [LinkedIn](https://www.linkedin.com/in/ajinkyanishane/)   |
 | Nikita Dhoble    | Frontend Developer    | [GitHub](https://github.com/NikitaDhoble)        | [LinkedIn](https://www.linkedin.com/in/nikita-dhoble-b77026334/)  |
 | Roshan Hiwase    | Frontend & Research   | [GitHub](https://github.com/Roshan-470)        | [LinkedIn](https://linkedin.com/in/roshanhiwase)  |
+
+## 💭 Thoughts of Team
+
+> "A degree ≠ a job, but with the right skills and direction, it can be."
+
+At Team GCOEY, we believe that every student deserves a fair shot at success, regardless of their background or college tier. Our goal is to bridge the gap between academic learning and industry expectations using the power of AI and personalized education.
+
+We built this platform to:
+
+Empower students to discover their true potential
+
+Provide tools that make job preparation smarter and more accessible
+
+Help create a future-ready workforce driven by passion, skills, and purpose
+
+Hackathons like HackVortex allow us to bring real change with real technology. We're proud of what we’ve built — and this is just the beginning. 🚀
+
+> _ "Don’t just get placed. Get prepared. Get empowered......"_
+
+---
+> Built with ❤ by Team GCOEY for AGTechathon 2025 
+---
+
+
+
