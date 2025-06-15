@@ -216,7 +216,7 @@ We aim to make every student — regardless of college or background — **caree
 
 ## 🎬 Demo & Resources
 
-- 📽️ **Demo Video** – [Coming Soon](./public/projectshot/gcoey.mp4)  
+- 📽️ **Demo Video** – [Coming Soon](https://drive.google.com/drive/folders/15AQ5yElLXvzNqhrHQqQ0F4IOzVLA_yyW?usp=sharing)  
 - 📝 **Showcase Pitch Deck** – [View Presentation (PDF)](./public/projectshot/Team_GCOEY.pdf)  
 - 💡 **Prototype Screenshot**:
 
