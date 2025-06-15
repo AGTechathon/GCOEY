@@ -265,7 +265,9 @@ const MoreInfoRole = () => {
           </Button>
           <div className="flex gap-5">
             <Button
-              onClick={() => (window.location.href = "/checkcareer")}
+              onClick={() =>
+                (window.location.href = "/careerplanning/checkcareer")
+              }
               className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 text-white"
             >
               Check My Career
