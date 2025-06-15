@@ -13,6 +13,9 @@ const componentMap = {
   CompanyProblem: dynamic(() =>
     import("@/app/company/components/CompanyProblem")
   ),
+  PrepareForJob: dynamic(() =>
+    import("@/app/company/components/PrepareForJob")
+  ),
 };
 
 const student = () => {

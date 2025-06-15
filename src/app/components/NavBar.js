@@ -1,5 +1,6 @@
 "use client";
 import { Menu, Target, X, ChevronDown } from "lucide-react";
+import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 
 function NavBar() {
@@ -9,28 +10,27 @@ function NavBar() {
 
   const menuItems = [
     {
-      name: "Career Planning",
+      name: "Career careerplanning",
       submenu: [
         {
           name: "Departmentroles",
-          href: "/planning?page=Departmentroles",
+          href: "/careerplanning?page=DepartmentJobRoles",
         },
-        { name: "Role Selection", href: "/planning?page=RoleRoadMap" },
-        { name: "Role Roadmap", href: "/planning?page=Roleroadmap" },
-        { name: "Course Roadmap", href: "/planning?page=Courseroadmap" },
+        { name: "Role Selection", href: "/careerplanning/checkcareer" },
+        { name: "Role Roadmap", href: "/careerplanning?page=RoleRoadMap" },
+        { name: "Course Roadmap", href: "/careerplanning?page=CourseRoadmap" },
       ],
     },
     {
       name: "learn",
       submenu: [
-        { name: "Courses", href: "/learn?page=Courses" },
+        { name: "Courses", href: "/learn/Course" },
         { name: "Projects", href: "/learn?page=Projects" },
         { name: "Recall", href: "/learn?page=Recall" },
-        {
-          name: "JD wise preparation",
-          href: "/learn?page=JDwise preparation",
-        },
-        { name: "30 day Prepare", href: "/learn?page=30day Prepare" },
+        { name: "Recall", href: "/learn/recall" },
+        { name: "30 days Preparation", href: "/learn?page=DayRemains" },
+        { name: "Tool Company Use", href: "/learn?page=ToolsCompanyUse" },
+        { name: "Check my Resume", href: "/learn?page=ResumeExtractor" },
       ],
     },
     {
@@ -53,11 +53,11 @@ function NavBar() {
       submenu: [
         {
           name: "Prepare for jobskill",
-          href: "/company?page=Prepareforjobskill",
+          href: "/company?page=PrepareForJob",
         },
-        { name: "Host problem", href: "/company?page=Hostproblem" },
-        { name: "Hire Talent", href: "/company?page=Hiretalent" },
-        { name: "Add Assisment", href: "/company?page=Addassisment" },
+        { name: "Company Problem", href: "/company?page=CompanyProblem" },
+        { name: "Hire Talent", href: "/company?page=HiringTalent" },
+        { name: "Take Assisment", href: "/company?page=TakeAssisment" },
       ],
     },
   ];
@@ -111,7 +111,12 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div
+            onClick={() => {
+              window.location.href = "/";
+            }}
+            className="flex items-center space-x-2 cursor-pointer"
+          >
             <div className="w-8 h-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg flex items-center justify-center">
               <Target className="w-5 h-5 text-white" />
             </div>
@@ -120,6 +125,12 @@ function NavBar() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link
+              href={"/home"}
+              className="flex items-center space-x-1 text-gray-300 hover:text-white transition-colors duration-200 py-2"
+            >
+              <span>Home</span>
+            </Link>
             {menuItems.map((item, index) => (
               <div
                 key={item.name}
@@ -159,9 +170,12 @@ function NavBar() {
                 )}
               </div>
             ))}
-            <button className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-lg">
+            <Link
+              href={"/careerplanning?page=DepartmentJobRoles"}
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded-full hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105 shadow-lg"
+            >
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}

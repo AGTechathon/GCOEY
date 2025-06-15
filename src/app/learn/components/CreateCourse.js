@@ -223,7 +223,7 @@ const CreateCourse = () => {
               {/* Action Button */}
               <button
                 onClick={() => {
-                  window.location.href = "/course/start";
+                  window.location.href = "/learn/course/start";
                 }}
                 className="mt-5 w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors duration-300"
               >

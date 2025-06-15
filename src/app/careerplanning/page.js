@@ -18,12 +18,6 @@ const componentMap = {
   CourseRoadmap: dynamic(() =>
     import("@/app/careerplanning/components/CourseRoadmap")
   ),
-  CompetitiveExamsDashboard: dynamic(() =>
-    import("@/app/careerplanning/components/ExamForJobs")
-  ),
-  TopCompany: dynamic(() =>
-    import("@/app/careerplanning/components/TopCompany")
-  ),
 };
 
 const carreplanning = () => {

@@ -193,7 +193,7 @@ const CoursePage = () => {
   useEffect(() => {
     setCheat(false), setInterview(false), setView(false), setEnggaging(false);
     if (!combinedChapterData) {
-      window.location.replace("/course");
+      window.location.replace("/learn/course");
     }
   }, []);
 

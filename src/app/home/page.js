@@ -53,16 +53,6 @@ export default function Home() {
           icon: Map,
           text: "Course Roadmap",
         },
-        {
-          href: " /careerplanning?page=TopCompany",
-          icon: PenTool,
-          text: "List Of 100 Companies",
-        },
-        {
-          href: " /careerplanning?page=CompetitiveExamsDashboard",
-          icon: PenTool,
-          text: "Exam for Jobs",
-        },
       ],
     },
     {
@@ -82,16 +72,6 @@ export default function Home() {
           href: " /learn?page=Projects",
           icon: FolderGit2,
           text: "Projects",
-        },
-        // {
-        //   href: " /page?page=Certificate",
-        //   icon: BookmarkCheck,
-        //   text: "Certification",
-        // },
-        {
-          href: " /learn?page=SoftSkill",
-          icon: BookmarkCheck,
-          text: "Soft Skills",
         },
         {
           href: "/learn/recall",
@@ -116,85 +96,7 @@ export default function Home() {
       ],
     },
     {
-      category: "Phase 3: Profile Building/Showcase",
-      items: [
-        {
-          href: " /profiling?page=githubProfile",
-          icon: Github,
-          text: "Github Profile",
-        },
-        {
-          href: " /profiling?page=linkedinProfile",
-          icon: Linkedin,
-          text: "LinkedIn Profile",
-        },
-        { href: " /profiling?page=ColdMail", icon: Mail, text: "Cold Mail" },
-        {
-          href: "/profiling/resume",
-          icon: FileText,
-          text: "Resume",
-        },
-        {
-          href: " /profiling?page=CoverLetter",
-          icon: FileCheck,
-          text: "Cover Letter",
-        },
-      ],
-    },
-    {
-      category: "Phase 4 :Pre-Search Knowledge",
-      items: [
-        {
-          href: " /prejobsearch?page=Jobs",
-          icon: Briefcase,
-          text: "Search Jobs",
-        },
-        {
-          href: " /prejobsearch?page=JobPortals",
-          icon: Globe,
-          text: "Job Portals",
-        },
-        {
-          href: " /prejobsearch?page=Agency",
-          icon: Building,
-          text: "Hiring Agency",
-        },
-
-        {
-          href: " /prejobsearch?page=JobScam",
-          icon: AlertTriangle,
-          text: "Job Scam",
-        },
-        {
-          href: "/prejobsearch?page=GhostJobs",
-          icon: Ghost,
-          text: "Ghost Jobs",
-        },
-        {
-          href: "/prejobsearch?page=JobsTerms",
-          icon: BookmarkCheck,
-          text: "Job Terms",
-        },
-        { href: "/prejobsearch?page=Laws", icon: Scale, text: "Job Laws" },
-        {
-          href: " /prejobsearch?page=InterviewFollowupForm",
-          icon: FaPaperPlane,
-          text: "Interview Followup Mail",
-        },
-        {
-          href: "/prejobsearch?page=Referral",
-          icon: PenTool,
-          text: "Reference message",
-        },
-        // {
-        //   href: "/rolecheck",
-        //   icon: PenTool,
-        //   text: "Check for role chances",
-        // },
-      ],
-    },
-    {
-      category: "Phase 5 :Technical Assessment",
+      category: "Phase 3 :Interview Preparation",
       items: [
         {
           href: "/technical/softskill",
@@ -219,21 +121,6 @@ export default function Home() {
           icon: Code,
           text: "Coding Round",
         },
-        {
-          href: " /technical?page=StartInterview",
-          icon: BookOpen,
-          text: "College Teacher Interview",
-        },
-        {
-          href: " /technical?page=CommanQuestion",
-          icon: MessageSquare,
-          text: "Common Questions",
-        },
-        {
-          href: " /technical?page=GroupDiscussion",
-          icon: Users,
-          text: "Group Discussion",
-        },
       ],
     },
     {
@@ -256,51 +143,6 @@ export default function Home() {
         },
       ],
     },
-    // {
-    //   category: "Future Scope",
-    //   items: [
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "CV Building",
-    //     },
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "job match suggestions", //use that api and match user with job match suggestions
-    //     },
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "Online interview of company",
-    //     },
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "Online Technical Assessments",
-    //     },
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "Fast Hiring Process",
-    //     },
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "Physical Interview",
-    //     },
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "Student community",
-    //     },
-    //     {
-    //       href: "#",
-    //       icon: PenTool,
-    //       text: "teach to other student",
-    //     },
-    //   ],
-    // },
   ];
 
   return (
