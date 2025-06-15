@@ -1,36 +1,222 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# 🧠 AI Powered Career Coach - Team GCOEY
 
-First, run the development server:
+**AGTechathon 2025 | AG Patil Institute of Technology, Solapur**  
+🚀 Empowering Tier II & III College Students to Become Industry-Ready with AI  
+
+---
+
+## 🚨 Problem Statement
+
+> A degree ≠ a job anymore.
+
+Each year, **20+ lakh B.Tech graduates** step into the job market — yet **only 20–30%** are industry-ready.  
+Outdated preparation methods, lack of personalized guidance, and limited exposure to real-time skill feedback have made job readiness a major challenge.
+
+---
+
+## 💡 Solution Overview
+
+🎯 **Goal**: Help students discover their best career path and become job-ready with personalized, AI-driven support.
+
+### 🔁 Approach
+
+- **Analyze** – Career interest and skill assessment
+- **Recommend** – AI-suggested roles and roadmaps
+- **Prepare** – Skill-based modules, interview prep
+- **Optimize** – Real-time feedback with AI
+- **Engage** – Gamify learning with rewards & badges
+
+---
+
+## ✨ Key Features
+
+- ✅ Ikigai-Based Role Selection
+- ✅ Real-Time Resume & Feedback Analysis
+- ✅ Mock Interviews & Coding Rounds
+- ✅ Gamification with Badges & Rewards
+- ✅ Department-wise Job Roadmaps
+- ✅ AI-powered Resume Optimization
+- ✅ Soft Skills Tracker & Learning Modules
+- ✅ Multi-language Support
+- ✅ Career Planning, Development, & Interview Simulation
+- ✅ Industry-Specific Learning Paths
+
+---
+
+## 🧭 Text-Based Flowchart (Job Seeker Journey)
+
+```text
+User (Job Seeker)
+     |
+     v
+Wants Career Guidance?
+     |
+     |-- No --> End / Use Platform as a Guest
+     |
+     |-- Yes
+     v
+Department-wise Role Recommendation
+     |
+Ikigai-Based Role Selection
+     |
+Has Preferred Role?
+     |
+     |-- No --> Role-wise Roadmap
+     |-- Yes --> Continue
+     v
+Completed Courses?
+     |
+     |-- No --> Skill-based Courses
+     |-- Yes
+     v
+Completed Project?
+     |
+     |-- No --> Project Building
+     |-- Yes --> Certification & Validation
+     v
+Resume Check & AI Matching
+     |
+Tools & Revision
+     |
+Job Application & Matching
+     |
+Assessment for Job Fit
+     |
+     |---> Selected Candidates
+     |---> Job Matched & Shortlisted
+```
+
+---
+
+## 🧩 Execution Plan
+
+![Execution Plan](./2.png)
+
+### 🔹 Phase 1: Career Planning
+- Dept-wise Roles
+- Check My Role
+- Roadmaps
+- Course Roadmap
+### 🔹 Phase 2: Learning & Development
+- Explore Courses
+- Creat Courses
+- Projects
+- Recall
+- 30-Day Targeted Prep
+- Tool Company use
+- Cheack My Resume
+
+### 🔹 Phase 3: Interview Preparation
+- Soft Skill Interiew
+- Aptitude Exam
+- Mock Interviews
+- Coding Practice
+
+### 🔹 Phase 4: Ecosystem Integration
+- Company Dashboard
+- Assessments
+- Post Jobs & Hire
+- Company Prolem
+
+---
+
+## 🧠 System Architecture & Workflow
+
+![System Architecture](./4.png)
+
+---
+
+## 🔬 Innovations
+
+![Innovation Highlights](./Copy%20of%20Team_GCOEY.png)
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer       | Technology               |
+|------------|---------------------------|
+| Frontend   | Next.js, Tailwind CSS     |
+| Backend    | Next.js (API routes)      |
+| UI Library | Shadcn                    |
+| AI Engine  | Gemini Flash 1.5 API      |
+
+---
+
+## 🧠 Core Algorithms
+
+- AI Career Path Recommender
+- Resume Evaluation & Optimization
+- Skill Gap Analyzer
+- AI Mock Interview Engine
+- AI-Assisted Coding Platform
+- Language Barrier Remover
+
+---
+
+## 🛠 Run Instructions
+
+```bash
+git clone https://github.com/AGTechathon/GCOEY/tree/master
+cd Agtechathon
+npm install
+```
+
+Create `.env` file with:
+
+```
+NEXT_PUBLIC_GEMINI_API_KEY=your_key_here
+NEXT_PUBLIC_YOUTUBE_API_KEY=your_key_here
+```
+
+Start the dev server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit: http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🔭 Future Scope
 
-## Learn More
+- 📱 Mobile App (Multi-language + Offline Support)
+- 🧠 Advanced ML-based Feedback Loop
+- 🏛 Government Scheme Integration
+- 🧑‍🏫 Human-AI Hybrid Validation
+- 🎯 Micro-certifications & Career Tests
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Utility & Impact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Sector        | Use Case                                                |
+|---------------|----------------------------------------------------------|
+| 🎓 Colleges    | T&P Cell integrations for placements                    |
+| 💻 EdTech      | Plug-in AI Career Coach for LMS                         |
+| 🏢 Companies   | Early talent mapping & assessments                      |
+| 🏛 Government  | Skill development for rural students                    |
+| 🔍 Job Portals | Resume-JD Mapping + Auto-Optimization                   |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 💭 Team Thought
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> "Don’t just get placed. Get prepared. Get empowered."
+
+At **Team GCOEY**, we’re passionate about democratizing job readiness.  
+We aim to make every student — regardless of college or background — **career confident** and **future-proof**.
+
+---
+
+## 🎬 Demo & Resources
+
+- 📽️ *Demo Video* – [Coming Soon]
+- 📝 *Pitch Deck* – Inside `/assets`
+- 💡 *Prototype Screenshots* – See Presentation Folder
+
+---
+
+Made with ❤️ by **Team GCOEY**
