@@ -1,3 +1,4 @@
+"use client";
 import { Target, Mail, Twitter, Github, Linkedin, ArrowUp } from "lucide-react";
 import React, { useState, useEffect } from "react";
 

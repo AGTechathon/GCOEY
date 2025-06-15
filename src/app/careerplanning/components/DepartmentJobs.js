@@ -234,7 +234,7 @@ export default function DepartmentJobRoles() {
       }
 
       console.log(json);
-      window.location.href = "/careerplanning/checkcareer";
+      window.location.href = "/careerplanning?page=MoreInfoRole";
     } catch (error) {
       console.error("Error parsing JSON:", error);
       alert("Failed to fetch role information. Please try again.");

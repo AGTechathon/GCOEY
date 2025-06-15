@@ -10,10 +10,10 @@ function NavBar() {
 
   const menuItems = [
     {
-      name: "Career careerplanning",
+      name: "Planning",
       submenu: [
         {
-          name: "Departmentroles",
+          name: "Department Roles",
           href: "/careerplanning?page=DepartmentJobRoles",
         },
         { name: "Role Selection", href: "/careerplanning/checkcareer" },
@@ -22,9 +22,9 @@ function NavBar() {
       ],
     },
     {
-      name: "learn",
+      name: "Learn",
       submenu: [
-        { name: "Courses", href: "/learn/Course" },
+        { name: "Courses", href: "/learn/course" },
         { name: "Projects", href: "/learn?page=Projects" },
         { name: "Recall", href: "/learn?page=Recall" },
         { name: "Recall", href: "/learn/recall" },
