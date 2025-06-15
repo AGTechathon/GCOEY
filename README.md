@@ -48,46 +48,59 @@ Outdated preparation methods, lack of personalized guidance, and limited exposur
 
 ## 🧭 Text-Based Flowchart (Job Seeker Journey)
 
-```text
-User (Job Seeker)
-     |
-     v
-Wants Career Guidance?
-     |
-     |-- No --> End / Use Platform as a Guest
-     |
-     |-- Yes
-     v
-Department-wise Role Recommendation
-     |
-Ikigai-Based Role Selection
-     |
-Has Preferred Role?
-     |
-     |-- No --> Role-wise Roadmap
-     |-- Yes --> Continue
-     v
-Completed Courses?
-     |
-     |-- No --> Skill-based Courses
-     |-- Yes
-     v
-Completed Project?
-     |
-     |-- No --> Project Building
-     |-- Yes --> Certification & Validation
-     v
-Resume Check & AI Matching
-     |
-Tools & Revision
-     |
-Job Application & Matching
-     |
-Assessment for Job Fit
-     |
-     |---> Selected Candidates
-     |---> Job Matched & Shortlisted
-```
+<div align="center">
+
+### 🔁 **User Journey Flowchart**
+
+<pre>
+
+🧑‍💼 User (Job Seeker)
+      │
+      ▼
+🚪 Entry Point (Sign Up / Guest)
+      │
+      ▼
+🎯 Identify Career Intent
+      │
+      ▼
+🧭 Department & Interest Mapping
+      │
+      ▼
+🧠 Ikigai-Based Role Alignment
+      │
+      ▼
+🧬 Role Recommendation
+      │
+      ▼
+🛣️ Learning Path Generation
+      │
+      ▼
+📚 Skill Gap Analyzer
+      │
+      ▼
+📘 Learning Recommendation
+      │
+      ▼
+🧪 Project Suggestions
+      │
+      ▼
+📄 Resume Optimization
+      │
+      ▼
+🔧 Career Toolbox
+      │
+      ▼
+💼 Job Matching Engine
+      │
+      ▼
+🧠 Job Fit Assessment
+ ┌────────────────────┬────────────────────┐
+ ▼                    ▼
+🎉 Job Matched    📝 Shortlisted for Roles
+
+</pre>
+</div>
+
 
 ---
 
