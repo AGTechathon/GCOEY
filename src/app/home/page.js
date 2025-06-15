@@ -99,25 +99,25 @@ export default function Home() {
       category: "Phase 3 :Interview Preparation",
       items: [
         {
-          href: "/technical/softskill",
+          href: "/preparation/softskill",
           icon: Brain,
           text: "Soft Skill Interview",
         },
 
         {
-          href: " /technical?page=AptitudeExam",
+          href: " /preparation?page=AptitudeExam",
           icon: FileSpreadsheet,
           text: "Aptitude Exam",
         },
 
         {
-          href: "/technical/mockinterview",
+          href: "/preparation/mockinterview",
           icon: PenTool,
           text: "Mock Interview",
         },
 
         {
-          href: " /technical?page=CodingRound",
+          href: " /preparation?page=CodingRound",
           icon: Code,
           text: "Coding Round",
         },

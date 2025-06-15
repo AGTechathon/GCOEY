@@ -84,7 +84,7 @@ function DetailForm({ setOk, setQuestions }) {
 
         setQuestions(response);
         setOk(true);
-        window.location.href = `/technical/mockinterview/${uniqueId}`;
+        window.location.href = `/preparation/mockinterview/${uniqueId}`;
       } catch (error) {
         console.error("Error saving to Firestore:", error);
       } finally {

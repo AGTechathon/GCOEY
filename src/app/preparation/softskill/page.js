@@ -6,7 +6,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Lightbulb, ShieldCheck, Brain, Users, Play } from "lucide-react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { useRouter } from "next/navigation";
-import { AiSoftSkillQuestion } from "../../../../config/AiSoftSkillQuestion";
+import { AiSoftSkillQuestion } from "../../../../config/AllAiModels";
 
 const SoftSkillFeature = ({ icon: Icon, title, description }) => (
   <div className="flex items-center space-x-4 p-3 bg-blue-50 rounded-lg mb-3">
@@ -36,7 +36,7 @@ const SoftSkillAssessmentPage = () => {
         "softSkillQuestions",
         JSON.stringify(parsedQuestions)
       );
-      router.push("/technical/softskill/assessment");
+      router.push("/preparation/softskill/assessment");
     } catch (error) {
       console.error("Error generating questions:", error);
       setError("Failed to generate questions. Please try again.");

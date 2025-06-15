@@ -37,14 +37,14 @@ function NavBar() {
       submenu: [
         {
           name: "Aptitude Preparation",
-          href: "/preparation?page=Aptitudepreparation",
+          href: "/preparation?page=AptitudeExam",
         },
         {
           name: "Coding Preparation",
-          href: "/preparation?page=Codingpreparation",
+          href: "/preparation?page=CodingRound",
         },
-        { name: "Mock interview", href: "/preparation?page=Mockinterview" },
-        { name: "Softskill", href: "/preparation?page=Softskill" },
+        { name: "Mock interview", href: "/preparation/mockinterview" },
+        { name: "Softskill", href: "/preparation/softskill" },
       ],
     },
     {
